@@ -1,3 +1,7 @@
+//
+// Created by Colin Moses on 2/17/2024.
+//
+
 #include <iostream>
 #include "functions.hpp"
 
@@ -21,12 +25,15 @@ int main() {
     string old_phrase = "The dog looked up.";
     string new_phrase = reverseSentence(old_phrase);
     cout<<new_phrase<<endl;
-     */
+    */
     /* 4
     cout<<everyNchar("abcdefghijkl",3)<<endl;
+    cout<<everyNchar("abcdefg",2)<<endl;
     */
     /* 5
     cout<<reverseNchar("abcdefghijkl",3)<<endl;
+    cout<<reverseNchar("abcdefghijk",3)<<endl;
+    cout<<reverseNchar("abcdefg",2)<<endl;
     */
     /* 6
     cout<<divisibleString("abcdefghijkl",3,5)<<endl;

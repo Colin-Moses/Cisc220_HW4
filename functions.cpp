@@ -1,5 +1,5 @@
 //
-// Created by Coins on 2/17/2024.
+// Created by Colin Moses on 2/17/2024.
 //
 
 #include <string>
@@ -44,16 +44,20 @@ string reverseSentence(string phrase){
 
 string everyNchar(string word, int num){
     string new_word="";
-    for(int i=0; i<word.length()/num; i++){
-        new_word+=word[i*num];
+    for(int i=0; i<word.length(); i++){
+        if(i%num==0) {
+            new_word += word[i];
+        }
     }
     return new_word;
 }
 
 string reverseNchar(string phrase, int num){
     string rev_phrase="";
-    for(int i=0; i<phrase.length()/num; i++){
-        rev_phrase=phrase[i*num]+rev_phrase;
+    for(int i=0; i<phrase.length(); i++){
+        if(i%num==0) {
+            rev_phrase += phrase[phrase.length() - i - 1];
+        }
     }
     return rev_phrase;
 }

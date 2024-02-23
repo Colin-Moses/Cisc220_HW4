@@ -1,5 +1,5 @@
 //
-// Created by Coins on 2/19/2024.
+// Created by Colin Moses on 2/19/2024.
 //
 
 #ifndef UNTITLED1_FUNCTIONS_HPP
