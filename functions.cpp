@@ -115,6 +115,9 @@ string diagonalString(string word){
 }
 
 string reverseDiagonalString(string word){
+    if(word.length()==1){
+        return word;
+    }
     string cheat_str = "";
     for(int i=1;i<word.length()-1;i++){
         if(i%(int)(sqrt(word.length())-1)==0){
@@ -124,12 +127,12 @@ string reverseDiagonalString(string word){
     return cheat_str;
 }
 
-string transposeString(string word){
-    int len=sqrt(word.length());
+string transposeString(string word) {
+    int len = sqrt(word.length());
     string arr[len][len];
     for (int i = 0; i < len; ++i) {
         for (int j = 0; j < len; ++j) {
-            arr[i][j] = word[i*len+j];
+            arr[i][j] = word[i * len + j];
         }
     }
     string new_word="";

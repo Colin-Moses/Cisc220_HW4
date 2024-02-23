@@ -51,6 +51,8 @@ int main() {
     */
     /* 10
     cout<<reverseDiagonalString("cbavrtmov")<<endl;
+    cout<<reverseDiagonalString("o")<<endl;
+    cout<<reverseDiagonalString("abcd")<<endl;
     */
     /* 11
     cout<<transposeString("abcdefghi")<<endl;
