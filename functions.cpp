@@ -115,7 +115,7 @@ string diagonalString(string word){
 }
 
 string reverseDiagonalString(string word){
-    if(word.length()==1){
+    if(word.length()<=1){
         return word;
     }
     string cheat_str = "";
