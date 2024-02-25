@@ -145,16 +145,10 @@ string transposeString(string word) {
 }
 
 int gcf(int num1, int num2){
-    if(num1<0 || num2<0){
-        return 0;
+    if(num2 == 0){
+        return num1;
     }
-    int gcf_num;
-    for (int i = 1; i < 10; ++i) {
-        if((num1%i)==0 && (num2%i)==0){
-            gcf_num=i;
-        }
-    }
-    return gcf_num;
+    return gcf(num2, num1 % num2);
 }
 
 string gcfDecode(string word, int arr1[], int arr2[], int arr_len){

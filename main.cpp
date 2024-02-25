@@ -57,14 +57,14 @@ int main() {
     /* 11
     cout<<transposeString("abcdefghi")<<endl;
     */
-    /* 12
+    // 12
     cout<<gcf(45,27)<<endl;
     cout<<gcf(22,13)<<endl;
-    */
-    /* 13
+    //
+    // 13
     int nums1[]={14,15,14,85,10};
     int nums2[]={25, 9, 35, 15, 12};
     cout<<gcfDecode("ziemkgrav",nums1,nums2,5)<<endl;
-    */
+    //
     return 0;
 }
